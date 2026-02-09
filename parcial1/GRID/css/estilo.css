@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor-grid{
+    width: 100vw;
+    height: 100vh;
+    border: 2px;
+    display: grid;
+      gap: 10px;
+    grid-template-areas: "seis seis tres uno"
+    "cuatro dos cinco cinco";
+
+}
+.contenedor-grid div{
+    border: 2px solid black;
+    font-size: 50px;
+}
+
+.elemento1 {
+grid-area: uno;
+background-color: aqua;
+}
+
+.elemento2 {
+    grid-area: dos;
+background-color: rgb(51, 153, 110);
+}
+
+.elemento3 {
+    grid-area: tres;
+background-color: rgb(51, 153, 139);
+}
+
+
+.elemento4 {
+    grid-area: cuatro;
+background-color: rgb(153, 51, 90);
+}
+
+.elemento5 {
+    grid-area: cinco;
+background-color: rgb(63, 153, 51);
+}
+
+.elemento6 {
+    grid-area: seis;
+background-color: hotpink;
+}
+@media(max-width: 400px){
+    .contenedor-grid{
+        grid-template-areas:"uno" "dos" "tres" "cuatro" "cinco" "seis";
+    }
+}
