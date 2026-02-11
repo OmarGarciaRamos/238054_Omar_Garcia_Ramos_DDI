@@ -1,0 +1,10 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenido{
+width: 500px;
+height: 500px;
+border: 2px solid blue;
+}
