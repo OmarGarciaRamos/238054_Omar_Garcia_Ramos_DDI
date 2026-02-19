@@ -1,0 +1,131 @@
+.cuerpo{
+    height: 1080px;
+    width: 1850px;
+    background-color: black;
+}
+.logo{
+    background-color: aqua;
+    height: 130px;
+    width: 1050px;
+    float: left;
+    margin-left	: 70px;
+    margin-top: 20px;
+}
+.arearecuadros1{
+height: 75px;
+width: 630px;
+display: flex;
+justify-content: center;
+gap: 25px;
+}
+.buscar{
+    height: 50px;
+    width: 200px;
+    background-color: beige;
+margin-top: 20px;
+}
+.f{
+    height: 50px;
+    width: 70px;
+    background-color: cadetblue;
+margin-top: 20px;
+}
+.t{
+    height: 50px;
+    width: 70px;
+    background-color: forestgreen;
+margin-top: 20px;
+}
+.you{
+    height: 50px;
+    width: 70px;
+    background-color: salmon;
+margin-top: 20px;
+}
+.castelbuscator{
+height: 75px;
+width: 630px;
+display: flex;
+justify-content: center;
+gap: 25px;
+}
+.castel{
+ height: 50px;
+    width: 145px;
+    background-color: cadetblue;
+margin-top: 20px;   
+}
+.catal{
+ height: 50px;
+    width: 145px;
+    background-color: rgb(175, 231, 19);
+margin-top: 20px;   
+}
+.ingles{
+ height: 50px;
+    width: 145px;
+    background-color: rgb(160, 95, 114);
+margin-top: 20px;   
+}
+
+.cuadroculero{
+    height: 60px;
+    width: 400px;
+    background-color: brown;
+    float: left;
+    margin-left	: 70px;
+    margin-top: 20px;
+}
+.navegaciondivorcio{
+    height: 60px;
+    width: 1180px;
+    background-color: violet;
+    float: left;
+    margin-left	: 30px;
+    margin-top: 20px;
+    display: flex;
+justify-content: center;
+gap: 20px;
+}
+.home{
+    height: 48px;
+    width: 175px;
+    background-color: burlywood;
+    float: left;
+    margin-top: 6px;
+}
+.festival{
+    height: 48px;
+    width: 175px;
+    background-color: saddlebrown;
+    float: left;
+    margin-top: 6px;
+}
+.cc{
+    height: 48px;
+    width: 175px;
+    background-color: snow;
+    float: left;
+    margin-top: 6px;
+}
+.actualid{
+    height: 48px;
+    width: 175px;
+    background-color: darkcyan;
+    float: left;
+    margin-top: 6px;
+}
+.progress{
+    height: 48px;
+    width: 175px;
+    background-color: yellowgreen;
+    float: left;
+    margin-top: 6px;
+}
+.contacto{
+    height: 48px;
+    width: 175px;
+    background-color: blue;
+    float: left;
+    margin-top: 6px;
+}

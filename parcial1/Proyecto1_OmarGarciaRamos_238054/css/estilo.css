@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header, nav, .contenido, footer{
+  position: relative;
+  z-index: 2;
+}
+
+header{
+  font-family: "IM Fell English SC", serif;
+  font-size: 90px;
+  text-align: center;
+  height: 130px;
+  color: rgb(141, 139, 26);
+}
+nav{
+    width: 1100px;
+    height: 60px;
+    background-color: rgb(12, 12, 12);
+    font-family: "IM Fell English SC", serif;
+    font-size: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;    
+
+    color: rgb(141, 139, 26);
+    margin: 0 auto;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.espiritus{
+  text-decoration: none;
+  color: rgb(141, 139, 26);
+  cursor: pointer;
+}
+
+.inicio{
+  text-decoration: none;
+  color: rgb(141, 139, 26);
+  cursor: pointer;
+}
+
+.rituales{
+  text-decoration: none;
+  color: rgb(141, 139, 26);
+  cursor: pointer;
+}
+
+footer{
+  width: 1080px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 10px;
+  color: rgb(220, 218, 150);
+  border: 1px solid rgb(55, 56, 10);
+  background-color: rgb(24, 24, 24);
+}
+
+
+.introprincipal{
+  gap: 30px;
+  align-items: start;
+  margin-bottom: 40px;
+
+  background-color: rgb(24, 24, 24);
+  padding: 30px;
+  border: 1px solid rgb(55, 56, 10);
+}
+
+.textointro{
+  color: rgb(220, 218, 150);
+  text-align: center;
+}
+.inicio,
+.espiritus,
+.rituales{
+    border: 2px solid rgb(55, 56, 10);
+}
+
+.contenido{
+  width: 1100px;
+  margin: 60px auto;
+}
+
+.espiritu{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: start;
+  margin-bottom: 40px;
+
+  background-color: rgb(24, 24, 24);
+  padding: 30px;
+  border: 1px solid rgb(55, 56, 10);
+}
+
+.espiritu img{
+  width: 100%;
+  height: auto;
+}
+.espiritu img{
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
+.textoespiritu{
+  color: rgb(220, 218, 150);
+  text-align: center;
+}
+
+body { 
+  background-color: #0e0e0e; 
+  background-image: url(/recursos/ojofondo1.svg); 
+  background-repeat: repeat; 
+  background-size: 120px 120px; 
+  background-position: center 0px;
+}
+
+/*esto es el fondo negro que se ve al inicio de cada pagina y que va disminuyendo su opacidad con el scroll*/
+.fondo-negro{
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  z-index: -1;
+  transition: opacity 0.1s linear;
+}
+
+/*este es el css que se encarga del efecto parallax de los ojos del fondo de la pagina de espiritus*/
+.parallax-css{
+  height: 80px;
+  background-image: linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)
+  ), url(/paginas/espiritus/recursos/ojosfondo.avif);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px 0;
+  opacity: 50%;
+}
+/*todo esto de la seccion espiritu se encarga de agrandar el area de espiritu al pasar el mouse por encima*/
+.link-espiritu {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block;
+}
+
+.link-espiritu:visited,
+.link-espiritu:hover,
+.link-espiritu:active {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.espiritu {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.espiritu:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
