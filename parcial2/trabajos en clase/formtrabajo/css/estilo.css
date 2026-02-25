@@ -1,34 +1,68 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 body {
-background-color: #f0f0f0;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.tetoarria {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 #formulario {
-background-color: #fff;
-padding: 20px;
-border-radius: 8px;
-width: 100%;
-max-width: 350px;
-box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-input[type="text"],input[type="email"],input[type="password"] {
-width: 100%;
-border: 1px solid #ccc;
-padding: 10px;
-} 
- button {
-width: 100%;
-padding: 10px;
-background-color: #cecece;
-color: white;
-border: none;
-border-radius: 4px;
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-principal {
+    width: 100%;
+    padding: 10px;
+    background-color: #cecece;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-principal:hover {
+    background-color: #b0b0b0;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: underline;
 }

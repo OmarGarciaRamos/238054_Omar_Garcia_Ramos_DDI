@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Iniciar Sesión</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="css/estilo.css" />
 </head>
 <body>
 
-    <div class="tetoarria">Iniciar Sesión</div>
+    <div class="tetoarria">Registrarse</div>
 
     <form id="formulario">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required />
+
+        <label>Apellido:</label>
+        <input type="text" name="apellido" required />
+
         <label>Correo:</label>
         <input type="email" name="correo" required />
 
         <label>Contraseña:</label>
         <input type="password" name="contraseña" required />
 
-        <label>Verificar Contraseña:</label>
-        <input type="password" name="verificar" required />
-
-        <button type="submit" class="btn-principal">Ingresar</button>
+        <button type="submit" class="btn-principal">Guardar</button>
     </form>
 
-    <a href="registro.html"><button class="btn-link">Registrarme</button></a>
-
-    <script src="js/inciosesion.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
