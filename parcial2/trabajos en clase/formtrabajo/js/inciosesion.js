@@ -13,6 +13,7 @@ formulario.addEventListener("submit", function (e) {
 
     if (!usuarioEncontrado) {
         alert("Correo no registrado");
+        window.location.href = "registro.html";
         return;
     }
 

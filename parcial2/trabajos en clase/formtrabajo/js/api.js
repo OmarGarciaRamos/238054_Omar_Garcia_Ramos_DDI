@@ -24,3 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(error => console.error(error));
 
 });
+function eliminarUsuarios() {
+  localStorage.removeItem("usuarios");
+  alert("Cuenta eliminada");
+}
