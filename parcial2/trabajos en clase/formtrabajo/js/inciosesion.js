@@ -27,4 +27,6 @@ formulario.addEventListener("submit", function (e) {
     }
 
     alert("Inicio de sesión exitoso");
+
+    window.location.href = "api.html";
 });
