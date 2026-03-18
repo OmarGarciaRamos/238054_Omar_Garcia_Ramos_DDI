@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+body.conflex {
     background: radial-gradient(circle at top, #1f1f1f, #000);
     display: flex;
     justify-content: center;
@@ -98,4 +98,29 @@ input:focus {
 
 .btn-link:hover {
     text-decoration: underline;
+}
+
+body.sinflex {
+    background: radial-gradient(circle at top, #1f1f1f, #000);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 1200px;
+}
+
+.titulonewbaby{
+    font-size: 54px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.contenidodecadenciamental{
+    height: 1000px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #1b1a1a62;
 }
