@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Álbum</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body class="sinflex">
+
+    <div class="titulonewbaby">Melodify</div>
+
+    <div class="contenidodecadenciamental">
+        <div class="navdecadencia">
+            <a class="eunicio" href="paginaprincipal.html">Regresar a inicio</a>
+            
+            <button class="cuenta" onclick="irCuenta()">
+                <img id="fotoUsuario" src="" alt="">
+            </button>
+        </div>
+
+        <div class="lineadivisoria"></div>
+
+        <form id="formularioAlbum">
+            <div class="cuadroinvis"></div>   
+
+            <div class="hilarypelona">Ingresa el nombre del album</div>
+            <div class="cuadroinvis2"></div>
+            <input class="input-album" type="text" name="namealbum" required />
+
+            <div class="cuadroinvis2"></div>
+            <div class="hilarypelona">Ingresa descripcion del album</div>
+            <div class="cuadroinvis2"></div>
+            <input class="input-album" type="text" name="descalbum" required />
+
+            <div class="cuadroinvis2"></div>
+            <button type="button" class="hilarypelona2" id="btnPortada">Selecciona portada del álbum</button>
+            <input type="file" id="inputPortada" accept="image/*" style="display:none" required />
+
+            <div class="cuadroinvis2"></div>    
+            <div id="previsualizacionPortada" style="margin-top: 10px;"></div>
+            <div class="cuadroinvis2"></div>    
+            <button type="submit" class="hilarypelona2">Subir</button>
+        </form>
+    </div>
+
+    <script src="../js/ircuenta.js"></script>
+    <script src="../js/albumes.js"></script>
+
+</body>
+</html>

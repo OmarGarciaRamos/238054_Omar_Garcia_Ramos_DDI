@@ -55,7 +55,7 @@ formulario.addEventListener("submit", function (e) {
                 datos.correo,
                 datos.contraseña,
                 fotoBase64,
-                esAdmin // 🔥 aquí se guarda
+                esAdmin
             );
 
             usuarios.push(usuarioNuevo);
