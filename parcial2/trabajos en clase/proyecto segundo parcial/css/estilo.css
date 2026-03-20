@@ -122,5 +122,60 @@ body.sinflex {
     height: 1000px;
     width: 95%;
     margin: 0 auto;
-    background-color: #1b1a1a62;
+    background-color: #121212;
+}
+
+.lineadivisoria{
+    height: 5px;
+    background-color: #0a0a0a;
+}
+
+.navdecadencia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #121212;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.navdecadencia .eunicio,
+.navdecadencia .maluma {
+    color: #b3b3b3;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navdecadencia .eunicio:hover,
+.navdecadencia .maluma:hover {
+    color: #ffffff;
+}
+
+.navdecadencia div {
+    display: flex;
+    gap: 20px;
+}
+
+.cuenta {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #1db954;
+    overflow: hidden;
+    cursor: pointer;
+    background: none;
+    transition: 0.3s;
+}
+
+.cuenta:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #1db954;
+}
+
+.cuenta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

@@ -2,7 +2,6 @@ const formulario = document.querySelector("#formulario");
 
 let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-
 formulario.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -25,6 +24,8 @@ formulario.addEventListener("submit", function (e) {
         alert("La contraseña es incorrecta");
         return;
     }
+
+    localStorage.setItem("usuarioActivo", JSON.stringify(usuarioEncontrado));
 
     alert("Inicio de sesión exitoso");
 
