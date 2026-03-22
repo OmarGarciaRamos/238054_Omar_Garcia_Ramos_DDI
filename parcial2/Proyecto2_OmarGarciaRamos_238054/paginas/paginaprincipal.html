@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Document</title>
+</head>
+<body class="sinflex">
+
+    <div class="titulonewbaby">Melodify</div>
+
+    <div class="contenidodecadenciamental">
+
+        <!-- nav principal -->
+        <div class="navdecadencia">
+            <a class="eunicio" href="paginaprincipal.html">Inicio</a>
+            <a class="maluma" href="subiralbum.html" id="btnSubir">subir album</a>
+
+            <!-- boton cuenta -->
+            <button class="cuenta">
+                <img id="fotoUsuario" src="" alt="">
+            </button>
+        </div>
+
+        <div class="lineadivisoria"></div>
+
+        <!-- donde salen albums -->
+        <div class="albumcontenedor" id="albumContenedor"></div>
+
+    </div>
+
+    <!-- modal eliminar -->
+    <div id="modalEliminar" class="modal">
+        <div class="modal-contenido">
+            <p>¿Seguro que quieres eliminar este álbum?</p>
+
+            <div class="modal-botones">
+                <button id="cancelarEliminar" class="btn-principal3">Cancelar</button>
+                <button id="confirmarEliminar" class="btn-principal2">Eliminar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script type="module" src="../js/ircuenta.js"></script>
+    <script type="module" src="../js/mostrarAlbumes.js"></script>
+
+</body>
+</html>

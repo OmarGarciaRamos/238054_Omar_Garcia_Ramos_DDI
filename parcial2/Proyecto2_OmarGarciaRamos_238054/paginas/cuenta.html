@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Document</title>
+</head>
+<body class="sinflex">
+
+    <div class="titulonewbaby">Melodify</div>
+
+    <div class="contenidodecadenciamental">
+
+        <!-- nav -->
+        <div class="navdecadencia">
+            <a class="eunicio" href="paginaprincipal.html">Inicio</a>
+            <a class="maluma" href="subiralbum.html" id="btnSubir">subir album</a>
+
+            <!-- boton cuenta (otra vez pepepe) -->
+            <button class="cuenta" onclick="intentarSalir('cuenta')">
+                <img id="fotoUsuario" src="" alt="">
+            </button>
+        </div>
+
+        <div class="lineadivisoria"></div>
+
+        <!-- editar perfil -->
+        <form id="formCuenta">
+
+            <div class="hilarypelona">Editar perfil</div>
+
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="correo" placeholder="Correo" required>
+            <input type="password" name="contraseña" placeholder="Nueva contraseña">
+
+            <!-- cambiar foto -->
+            <button type="button" id="btnFoto" class="hilarypelona2">
+                Cambiar foto
+            </button>
+
+            <input type="file" id="inputFoto" accept="image/*" style="display:none;">
+
+            <!-- guardar cambios -->
+            <button type="submit" class="btn-principal">Guardar cambios</button>
+
+            <!-- cerrar sesion -->
+            <button type="button" id="cerrarSesion" class="btn-eliminar">
+                Cerrar sesión
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- modal guardar -->
+    <div id="modalGuardar" class="modal">
+        <div class="modal-contenido">
+            <p>¿Quieres guardar los cambios?</p>
+
+            <div class="modal-botones">
+                <button id="descartar" class="btn-principal3">Salir</button>
+                <button id="guardarCambios" class="btn-principal2">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="../js/cambiocuenta.js"></script>
+    <script type="module" src="../js/ircuenta.js"></script>
+
+</body>
+</html>

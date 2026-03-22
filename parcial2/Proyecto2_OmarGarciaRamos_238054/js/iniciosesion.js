@@ -1,13 +1,18 @@
+// form login
 const formulario = document.querySelector("#formulario");
 
+// usuarios
 let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
+// submit login
 formulario.addEventListener("submit", function (e) {
+
     e.preventDefault();
 
     const datosFormulario = new FormData(formulario);
     const datos = Object.fromEntries(datosFormulario.entries());
 
+    // buscar usuario
     const usuarioEncontrado = usuarios.find((u) => u.correo === datos.correo);
 
     if (!usuarioEncontrado) {
@@ -15,6 +20,7 @@ formulario.addEventListener("submit", function (e) {
         return;
     }
 
+    // validar contraseñas
     if (datos.contraseña !== datos.verificar) {
         alert("Las contraseñas no coinciden");
         return;
@@ -25,9 +31,10 @@ formulario.addEventListener("submit", function (e) {
         return;
     }
 
+    // guardar sesión
     localStorage.setItem("usuarioActivo", JSON.stringify(usuarioEncontrado));
 
     alert("Inicio de sesión exitoso");
 
-    window.location.href = "../paginas/paginaprincipal.html";
+    window.location.href = "paginas/paginaprincipal.html";
 });

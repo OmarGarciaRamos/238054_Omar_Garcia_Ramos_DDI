@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Registro</title>
-    <link rel="stylesheet" href="/css/estilo.css" />
+    <link rel="stylesheet" href="../css/estilo.css" />
 </head>
 <body class="conflex">
 
     <div class="titulobaby">Melodify</div>
     <div class="tetoarria">Registrarse</div>
 
+    <!-- formulario registro -->
     <form id="formulario">
+
         <label>Nombre:</label>
         <input type="text" name="nombre" required />
 
@@ -27,20 +29,23 @@
         <label>Confirmar contraseña:</label>
         <input type="password" name="confirmar" required />
 
-        <label style="display: flex; align-items: center; gap: 8px; margin-top: 10px;">
-        <input type="checkbox" name="admin" />
-        Crear cuenta como administrador
+        <!-- admin (seu quiere y si no pues no) -->
+        <label style="display: flex; gap: 8px;">
+            <input type="checkbox" name="admin" />
+            Crear cuenta como administrador
         </label>
 
+        <!-- elegir foto -->
         <button type="submit" class="btn-principal">
             Seleccionar foto de perfil
         </button>
 
-       
-
+        <!-- input escondido -->
         <input type="file" id="fotoPerfil" accept="image/*" style="display: none;" />
+
     </form>
 
+    <!-- js registro -->
     <script src="../js/registro.js"></script>
 </body>
 </html>
