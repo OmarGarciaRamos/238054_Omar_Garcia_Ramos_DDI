@@ -1,6 +1,5 @@
-//la verdad le pedi ayuda a chagpt para crear la base de datos profe
-//nose como funciona la pagina de firebase pero queria que pudieran agregar
-//todos y ver lo que haciean otros 
+//La verdad nose como funciona esta parte aparete de importar la informacion almacenada en la base de datos,
+//todo este codigo me lo dio automaticamente firebase para vincularlo
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
