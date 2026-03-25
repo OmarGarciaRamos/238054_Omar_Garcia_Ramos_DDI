@@ -1,7 +1,5 @@
 /* mostrar albums firebase */
-//lo hice funcionar perfecto pero por pedirle a chatgpt como podia subirlo a una 
-//base de datos para que todos pudieran moverlo y ver las modificaciones
-//movio muchas cosas, pero aun entiendo como funciona todo
+//
 
 import { db } from "./firebase.js";
 import { getDocs, collection, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
