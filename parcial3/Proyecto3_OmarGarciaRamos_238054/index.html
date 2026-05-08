@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Meu canvas kkk</title> 
+</head>
+<body>
+    <div id="app-container"> 
+        <header id="app-header">
+            <h1>Paint</h1>
+        </header>
+        <div id="menu">
+            <label>Herramienta:</label>
+            <button id="btnCuadrado">Cuadrado</button>
+            <button id="btnCirculo">Círculo</button>
+            <button id="btnCorazon">Corazón</button>
+            <button id="btnLinea">Línea</button>
+            <button id="btnLapiz">Lápiz</button>
+            <button id="btnBorrador">Borrador</button>
+            <div class="separator"></div> 
+            <label for="fileInput" class="custom-file-upload">Cargar Imagen</label>
+            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+            <div class="separator"></div> 
+            <label for="colorRellenoInput">Relleno:</label>
+            <input type="color" id="colorRellenoInput" value="#ffff00">
+            <label for="colorLineaInput">Contorno:</label>
+            <input type="color" id="colorLineaInput" value="#ff0000">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <label for="grosorInput">Grosor:</label>
+            <input type="range" id="grosorInput" min="1" max="50" value="5">
+            <button id="btnDeshacer">Deshacer</button>
+            <button id="btnRehacer">Rehacer</button>
+            <button id="btnGuardar">Guardar</button>
+            <div class="separator"></div>
+            <label>Filtros:</label>
+            <button id="btnBN">B/N</button>
+            <button id="btnSepia">Sepia</button>
+            <button id="btnNegativo">Negativo</button>
+            <button id="btnRojo">Rojo</button>
+            <button id="btnVerde">Verde</button>
+            <button id="btnAzul">Azul</button> 
+            <button id="btnLimpiar">Limpiar Canvas</button>
+        </div>
+        
+        <canvas class="canvas" id="canvas" width="1000" height="600"></canvas>
+    </div>
+
+</body>
+<script src="js/figuras.js"></script> 
+<script src="js/canvas.js"></script>
+</html>
